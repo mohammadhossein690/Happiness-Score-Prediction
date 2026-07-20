@@ -37,5 +37,5 @@ Python • Pandas • NumPy • Scikit-learn • Matplotlib
 Install dependencies:
 
 ```bash
-pip install numpy pandas matplotlib scikit-learn
+pip install -r requirements.txt
 ```
