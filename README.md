@@ -1,18 +1,41 @@
-# World Happiness Score Prediction
+# 😊 World Happiness Score Prediction using SVR
 
 A machine learning project using **Support Vector Regression (SVR)** to predict global happiness scores based on socioeconomic features.
 
-## Key Results
+## 🎯 Objective
+
+Predict happiness scores of countries based on socioeconomic indicators using machine learning regression techniques.
+
+## 📈 Key Results
+
 - **Model:** Support Vector Regression (SVR)
-- **Best Parameters:** `{'C': 0.25, 'degree': 2, 'gamma': 0.3, 'kernel': 'poly'}`
-- **10-Fold Cross-Validation (R²):** 0.759
-- **Test Set Performance (R²):** 0.846
+- **Test R² Score:** **0.8468**
+- **10-Fold Cross Validation R²:** **0.7590 ± 0.0900**
 
-## Features Used
-`Region`, `Economy (GDP per Capita)`, `Family`, `Health (Life Expectancy)`, `Freedom`, `Trust (Government Corruption)`, `Generosity`
+### Evaluation Metrics
 
-## How to Run
-1. Install dependencies:
+| Metric | Value |
+|--------|------:|
+| MAE | 0.3790 |
+| MSE | 0.2174 |
+| RMSE | 0.4663 |
+| R² Score | 0.8468 |
+
+## ⚙️ Methodology
+
+- **Preprocessing:** Data cleaning, feature selection, and feature scaling.
+- **Model Selection:** Implementing **Support Vector Regression (SVR)** for continuous value prediction.
+- **Hyperparameter Tuning:** Using GridSearchCV to optimize SVR parameters.
+- **Evaluation:** Measuring model performance using R² Score, MAE, MSE, RMSE, and Cross Validation.
+
+## 🛠 Tech Stack
+
+Python • Pandas • NumPy • Scikit-learn • Matplotlib
+
+## ▶️ How to Run
+
+Install dependencies:
+
 ```bash
-   pip install numpy pandas matplotlib scikit-learn
-   
+pip install numpy pandas matplotlib scikit-learn
+```
